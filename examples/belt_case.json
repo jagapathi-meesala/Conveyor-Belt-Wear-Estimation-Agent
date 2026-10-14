@@ -1,0 +1,12 @@
+{
+  "belt_id": "CV-204",
+  "initial_thickness_mm": 12.0,
+  "current_thickness_mm": 8.1,
+  "wear_warning_pct": 20,
+  "wear_critical_pct": 30,
+  "inspection_date": "2026-10-14",
+  "observations": [
+    "Uneven wear near loading zone"
+  ],
+  "critical_flags": []
+}

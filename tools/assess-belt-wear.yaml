@@ -1,0 +1,12 @@
+name: assess-belt-wear
+description: Calculate indicative belt thickness loss and threshold band from supplied inspection values.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [belt_id, initial_thickness_mm, current_thickness_mm]
+  properties:
+    belt_id: {type: string}
+    initial_thickness_mm: {type: number, exclusiveMinimum: 0}
+    current_thickness_mm: {type: number, exclusiveMinimum: 0}
+    wear_warning_pct: {type: number, minimum: 0}
+    wear_critical_pct: {type: number, minimum: 0}

@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: conveyor-belt-wear-estimation-agent
+version: "1.0.0"
+description: Estimates indicative conveyor belt wear from supplied inspection measurements and prioritizes human maintenance review.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - wear-assessment
+  - maintenance-planning
+  - data-quality
+tools:
+  - assess-belt-wear
+  - validate-inspection-data
+  - prioritize-maintenance
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - conveyor
+  - maintenance
+  - industrial-inspection

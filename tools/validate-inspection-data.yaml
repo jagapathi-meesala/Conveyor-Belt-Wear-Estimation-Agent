@@ -1,0 +1,10 @@
+name: validate-inspection-data
+description: Validate required inspection fields and measurement consistency.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [belt_id, initial_thickness_mm, current_thickness_mm]
+  properties:
+    belt_id: {type: string}
+    initial_thickness_mm: {type: number}
+    current_thickness_mm: {type: number}

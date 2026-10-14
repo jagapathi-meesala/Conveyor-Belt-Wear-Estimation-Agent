@@ -1,0 +1,12 @@
+name: prioritize-maintenance
+description: Produce an advisory review priority based on calculated wear band and explicit critical flags.
+input_schema:
+  type: object
+  additionalProperties: false
+  required: [belt_id, initial_thickness_mm, current_thickness_mm]
+  properties:
+    belt_id: {type: string}
+    initial_thickness_mm: {type: number}
+    current_thickness_mm: {type: number}
+    critical_flags: {type: array, items: {type: string}}
+    observations: {type: array, items: {type: string}}
